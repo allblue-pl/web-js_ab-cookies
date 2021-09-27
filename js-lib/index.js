@@ -56,8 +56,8 @@ class abCookies_Class
     {
         js0.args(arguments, 'string', null, 
                 js0.Preset({
-            expires: [ 'number', js0.Default(null), ],
-            domain: [ 'string', js0.Default(null), ],
+            expires: [ 'number', js0.Null, js0.Default(null), ],
+            domain: [ 'string', js0.Null, js0.Default(null), ],
             path: [ 'string', js0.Default('/'), ],
         }, settings));
 
