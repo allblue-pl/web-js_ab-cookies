@@ -54,12 +54,13 @@ class abCookies_Class
 
     set(name, value, settings = {})
     {
-        js0.args(arguments, 'string', null, 
-                js0.Preset({
+        js0.args(arguments, 'string', null, [ js0.RawObject, js0.Default ]);
+
+        js0.typeE(settings, js0.Preset({
             expires: [ 'number', js0.Null, js0.Default(null), ],
             domain: [ 'string', js0.Null, js0.Default(null), ],
             path: [ 'string', js0.Default('/'), ],
-        }, settings));
+        }));
 
         let cookieStr = '';
         /* Value */
