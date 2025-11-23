@@ -72,6 +72,7 @@ class abCookies_Class
             let expiresTime = Math.round((new Date()).getTime() / 1000) + settings.expires;
             cookieStr += 'expires=' + (new Date(expiresTime * 1000)).toUTCString() + '; ';
         }
+
         /* Domain */
         if (settings.domain !== null) {
             cookieStr += 'domain=' + settings.domain + '; ';
